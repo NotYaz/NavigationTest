@@ -10,15 +10,11 @@ import Foundation
 final class HomeModule: ModuleProtocol {
     
     var submodules: [any ModuleProtocol] = []
-    var nodes: [any NodeProtocol] = []
     
     var coordinator: HomeCoordinator
     
     init() {
         coordinator = HomeCoordinator()
-        nodes = [HomeListNode()]
-        
-        coordinator.set(nodes: nodes)
     }
     
 }

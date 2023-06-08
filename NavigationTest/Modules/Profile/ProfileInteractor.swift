@@ -9,10 +9,12 @@ import Foundation
 
 final class ProfileInteractor: InteractorProtocol {
     
-    var presenter: ProfilePresenter
+    weak var presenter: ProfilePresenter?
+    weak var coordinator: ProfileCoordinator?
     
-    init(presenter: ProfilePresenter) {
+    init(presenter: ProfilePresenter, coordinator: ProfileCoordinator) {
         self.presenter = presenter
+        self.coordinator = coordinator
     }
     
 }

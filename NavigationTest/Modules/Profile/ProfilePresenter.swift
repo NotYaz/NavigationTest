@@ -9,6 +9,6 @@ import Foundation
 
 final class ProfilePresenter: PresenterProtocol {
     
-    var view: ProfileView?
+    weak var view: ProfileView?
     
 }

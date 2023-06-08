@@ -9,7 +9,7 @@ import UIKit
 
 final class HomeListView: UITableViewController, ViewProtocol {
     
-    var interactor: HomeListInteractor
+    weak var interactor: HomeListInteractor?
     
     init(interactor: HomeListInteractor) {
         self.interactor = interactor
@@ -38,6 +38,10 @@ extension HomeListView {
         let cell = UITableViewCell()
         cell.textLabel?.text = String(indexPath.row)
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        interactor?.didSelectItem(index: indexPath.row)
     }
     
 }

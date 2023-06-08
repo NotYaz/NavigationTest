@@ -13,15 +13,19 @@ final class ProfileNode: NodeProtocol {
     var intercator: ProfileInteractor
     var view: ProfileView
     
+    weak var coordinator: ProfileCoordinator?
+    
     var showStyle: ShowStyle {
-        .tabbar
+        .root
     }
     
-    init() {
+    init(coordinator: ProfileCoordinator) {
         presenter = ProfilePresenter()
-        intercator = ProfileInteractor(presenter: presenter)
+        intercator = ProfileInteractor(presenter: presenter, coordinator: coordinator)
         view = ProfileView(interactor: intercator)
         presenter.view = view
+        
+        self.coordinator = coordinator
     }
     
 }

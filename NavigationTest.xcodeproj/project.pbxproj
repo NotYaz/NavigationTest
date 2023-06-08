@@ -29,6 +29,10 @@
 		2C0940A12A320E7D002089B1 /* HomeModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0940A02A320E7D002089B1 /* HomeModule.swift */; };
 		2C0940A32A320EAA002089B1 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0940A22A320EAA002089B1 /* HomeCoordinator.swift */; };
 		2C0940A52A320EB4002089B1 /* HomeNVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0940A42A320EB4002089B1 /* HomeNVC.swift */; };
+		2C0940A72A323195002089B1 /* HomeDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0940A62A323195002089B1 /* HomeDetailPresenter.swift */; };
+		2C0940A92A3231AA002089B1 /* HomeDetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0940A82A3231AA002089B1 /* HomeDetailInteractor.swift */; };
+		2C0940AB2A3231B6002089B1 /* HomeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0940AA2A3231B6002089B1 /* HomeDetailView.swift */; };
+		2C0940AD2A3231C3002089B1 /* HomeDetailNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0940AC2A3231C3002089B1 /* HomeDetailNode.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +60,10 @@
 		2C0940A02A320E7D002089B1 /* HomeModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModule.swift; sourceTree = "<group>"; };
 		2C0940A22A320EAA002089B1 /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
 		2C0940A42A320EB4002089B1 /* HomeNVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeNVC.swift; sourceTree = "<group>"; };
+		2C0940A62A323195002089B1 /* HomeDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDetailPresenter.swift; sourceTree = "<group>"; };
+		2C0940A82A3231AA002089B1 /* HomeDetailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDetailInteractor.swift; sourceTree = "<group>"; };
+		2C0940AA2A3231B6002089B1 /* HomeDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDetailView.swift; sourceTree = "<group>"; };
+		2C0940AC2A3231C3002089B1 /* HomeDetailNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDetailNode.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,7 +113,6 @@
 				2C0940832A31F05C002089B1 /* Root */,
 				2C0940752A31E445002089B1 /* Profile */,
 				2C0940742A31E43A002089B1 /* Home */,
-				2C0940732A31E3CE002089B1 /* Splash */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -165,6 +172,10 @@
 		2C09407A2A31E553002089B1 /* Detail */ = {
 			isa = PBXGroup;
 			children = (
+				2C0940A62A323195002089B1 /* HomeDetailPresenter.swift */,
+				2C0940A82A3231AA002089B1 /* HomeDetailInteractor.swift */,
+				2C0940AA2A3231B6002089B1 /* HomeDetailView.swift */,
+				2C0940AC2A3231C3002089B1 /* HomeDetailNode.swift */,
 			);
 			path = Detail;
 			sourceTree = "<group>";
@@ -172,6 +183,7 @@
 		2C0940832A31F05C002089B1 /* Root */ = {
 			isa = PBXGroup;
 			children = (
+				2C0940732A31E3CE002089B1 /* Splash */,
 				2C0940962A31FD14002089B1 /* RootCoordinator.swift */,
 				2C0940942A31FCB5002089B1 /* RootModule.swift */,
 				2C0940982A32042C002089B1 /* RootVC.swift */,
@@ -250,6 +262,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C0940822A31E6B7002089B1 /* HomeListNode.swift in Sources */,
+				2C0940AD2A3231C3002089B1 /* HomeDetailNode.swift in Sources */,
 				2C09407C2A31E56A002089B1 /* HomeListPresenter.swift in Sources */,
 				2C0940802A31E58A002089B1 /* HomeListView.swift in Sources */,
 				2C0940932A31F9A1002089B1 /* ProfileNode.swift in Sources */,
@@ -264,7 +277,10 @@
 				2C09405F2A31E357002089B1 /* AppDelegate.swift in Sources */,
 				2C0940972A31FD14002089B1 /* RootCoordinator.swift in Sources */,
 				2C0940A52A320EB4002089B1 /* HomeNVC.swift in Sources */,
+				2C0940AB2A3231B6002089B1 /* HomeDetailView.swift in Sources */,
 				2C0940A32A320EAA002089B1 /* HomeCoordinator.swift in Sources */,
+				2C0940A92A3231AA002089B1 /* HomeDetailInteractor.swift in Sources */,
+				2C0940A72A323195002089B1 /* HomeDetailPresenter.swift in Sources */,
 				2C09407E2A31E579002089B1 /* HomeListInteractor.swift in Sources */,
 				2C0940612A31E357002089B1 /* SceneDelegate.swift in Sources */,
 				2C0940782A31E470002089B1 /* VIP.swift in Sources */,

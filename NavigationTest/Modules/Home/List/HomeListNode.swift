@@ -13,15 +13,19 @@ final class HomeListNode: NodeProtocol {
     var intercator: HomeListInteractor
     var view: HomeListView
     
+    weak var coordinator: HomeCoordinator?
+    
     var showStyle: ShowStyle {
-        .tabbar
+        .root
     }
     
-    init() {
+    init(coordinator: HomeCoordinator) {
         presenter = HomeListPresenter()
-        intercator = HomeListInteractor(presenter: presenter)
+        intercator = HomeListInteractor(presenter: presenter, coordinator: coordinator)
         view = HomeListView(interactor: intercator)
         presenter.view = view
+        
+        self.coordinator = coordinator
     }
     
 }

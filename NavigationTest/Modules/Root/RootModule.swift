@@ -10,7 +10,6 @@ import UIKit
 final class RootModule: ModuleProtocol {
     
     var submodules: [any ModuleProtocol] = []
-    var nodes: [any NodeProtocol] = []
     
     var coordinator: RootCoordinator
     

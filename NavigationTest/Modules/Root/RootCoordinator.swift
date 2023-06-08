@@ -10,21 +10,21 @@ import UIKit
 final class RootCoordinator: CoordinatorProtocol {
     
     var hostVC: RootVC
+    var nodes: [any NodeProtocol] = []
     
     func set(viewControllers: [UIViewController]) {
-//        hostVC.setViewControllers(viewControllers, animated: false)
         hostVC.viewControllers = viewControllers
     }
     
     func set(nodes: [any NodeProtocol]) {
-//        hostVC.setViewControllers([], animated: false)
+
     }
     
     func show(node: any NodeProtocol) {
-//
+        
     }
     
     init() {
-        self.hostVC = RootVC()
+        hostVC = RootVC()
     }
 }

@@ -9,10 +9,16 @@ import Foundation
 
 final class HomeListInteractor: InteractorProtocol {
     
-    var presenter: HomeListPresenter
+    weak var presenter: HomeListPresenter?
+    weak var coordinator: HomeCoordinator?
     
-    init(presenter: HomeListPresenter) {
+    init(presenter: HomeListPresenter, coordinator: HomeCoordinator) {
         self.presenter = presenter
+        self.coordinator = coordinator
+    }
+    
+    func didSelectItem(index: Int) {
+        coordinator?.showDetail(index: index)
     }
     
 }

@@ -10,25 +10,24 @@ import Foundation
 final class HomeCoordinator: CoordinatorProtocol {
     
     var hostVC: HomeNVC
-    
-    func set(nodes: [any NodeProtocol]) {
-        hostVC.setViewControllers(nodes.map { $0.view }, animated: false)
-    }
-    
-    func show(node: any NodeProtocol) {
-        switch node.showStyle {
-        case .push:
-            hostVC.pushViewController(node.view, animated: true)
-        case .modal:
-            hostVC.present(node.view, animated: true)
-        default:
-            fatalError("showStyle not supported")
-        }
-    }
+    var nodes: [any NodeProtocol] = []
     
     init() {
         hostVC = HomeNVC()
+        
+        nodes = [HomeListNode(coordinator: self)]
+        set(nodes: nodes)
     }
     
+    
+}
+
+extension HomeCoordinator {
+    
+    func showDetail(index: Int) {
+        let detailNode = HomeDetailNode(index: index, coordinator: self)
+        nodes += [detailNode]
+        show(node: detailNode)
+    }
     
 }

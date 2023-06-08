@@ -9,6 +9,6 @@ import Foundation
 
 final class HomeListPresenter: PresenterProtocol {
     
-    var view: HomeListView?
+    weak var view: HomeListView?
     
 }
