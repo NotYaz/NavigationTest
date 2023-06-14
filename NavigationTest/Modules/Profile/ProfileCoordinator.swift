@@ -9,11 +9,11 @@ import Foundation
 
 final class ProfileCoordinator: CoordinatorProtocol {
     
-    var hostVC: ProfileNVC
+    var hostVC: ProfileNavigationVC
     var nodes: [any NodeProtocol] = []
     
     init() {
-        hostVC = ProfileNVC()
+        hostVC = ProfileNavigationVC()
         
         nodes = [ProfileNode(coordinator: self)]
         set(nodes: nodes)

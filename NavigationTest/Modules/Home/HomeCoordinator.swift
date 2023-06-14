@@ -9,11 +9,11 @@ import Foundation
 
 final class HomeCoordinator: CoordinatorProtocol {
     
-    var hostVC: HomeNVC
+    var hostVC: HomeNavgationVC
     var nodes: [any NodeProtocol] = []
     
     init() {
-        hostVC = HomeNVC()
+        hostVC = HomeNavgationVC()
         
         nodes = [HomeListNode(coordinator: self)]
         set(nodes: nodes)
