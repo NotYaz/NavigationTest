@@ -34,6 +34,8 @@
 		2C0940AB2A3231B6002089B1 /* HomeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0940AA2A3231B6002089B1 /* HomeDetailView.swift */; };
 		2C0940AD2A3231C3002089B1 /* HomeDetailNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0940AC2A3231C3002089B1 /* HomeDetailNode.swift */; };
 		FC0193562A39EB9F00D8E5E9 /* PinLayout in Frameworks */ = {isa = PBXBuildFile; productRef = FC0193552A39EB9F00D8E5E9 /* PinLayout */; };
+		FC01935A2A39F07100D8E5E9 /* UILabel+.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0193592A39F07100D8E5E9 /* UILabel+.swift */; };
+		FC01935C2A39F12C00D8E5E9 /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC01935B2A39F12C00D8E5E9 /* UIView+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,6 +67,8 @@
 		2C0940A82A3231AA002089B1 /* HomeDetailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDetailInteractor.swift; sourceTree = "<group>"; };
 		2C0940AA2A3231B6002089B1 /* HomeDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDetailView.swift; sourceTree = "<group>"; };
 		2C0940AC2A3231C3002089B1 /* HomeDetailNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDetailNode.swift; sourceTree = "<group>"; };
+		FC0193592A39F07100D8E5E9 /* UILabel+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+.swift"; sourceTree = "<group>"; };
+		FC01935B2A39F12C00D8E5E9 /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +102,7 @@
 		2C09405D2A31E357002089B1 /* NavigationTest */ = {
 			isa = PBXGroup;
 			children = (
+				FC0193582A39F05F00D8E5E9 /* Extensions */,
 				2C0940762A31E461002089B1 /* Common */,
 				2C0940722A31E3BC002089B1 /* Modules */,
 				2C09405E2A31E357002089B1 /* AppDelegate.swift */,
@@ -193,6 +198,15 @@
 			path = Root;
 			sourceTree = "<group>";
 		};
+		FC0193582A39F05F00D8E5E9 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FC0193592A39F07100D8E5E9 /* UILabel+.swift */,
+				FC01935B2A39F12C00D8E5E9 /* UIView+.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -279,6 +293,7 @@
 				2C0940952A31FCB5002089B1 /* RootModule.swift in Sources */,
 				2C0940992A32042C002089B1 /* RootVC.swift in Sources */,
 				2C09408F2A31F981002089B1 /* ProfileInteractor.swift in Sources */,
+				FC01935C2A39F12C00D8E5E9 /* UIView+.swift in Sources */,
 				2C09409D2A320B6C002089B1 /* ProfileCoordinator.swift in Sources */,
 				2C0940912A31F990002089B1 /* ProfileView.swift in Sources */,
 				2C09409B2A320B41002089B1 /* ProfileModule.swift in Sources */,
@@ -286,6 +301,7 @@
 				2C0940972A31FD14002089B1 /* RootCoordinator.swift in Sources */,
 				2C0940A52A320EB4002089B1 /* HomeNVC.swift in Sources */,
 				2C0940AB2A3231B6002089B1 /* HomeDetailView.swift in Sources */,
+				FC01935A2A39F07100D8E5E9 /* UILabel+.swift in Sources */,
 				2C0940A32A320EAA002089B1 /* HomeCoordinator.swift in Sources */,
 				2C0940A92A3231AA002089B1 /* HomeDetailInteractor.swift in Sources */,
 				2C0940A72A323195002089B1 /* HomeDetailPresenter.swift in Sources */,
