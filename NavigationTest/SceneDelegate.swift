@@ -22,7 +22,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
                 window = UIWindow(frame: windowScene.coordinateSpace.bounds)
                 window?.windowScene = windowScene
         
-                let rootModule = RootModule()
+                let rootModule = StartupModule()
         
                 window?.rootViewController = rootModule.coordinator.hostVC
                 window?.makeKeyAndVisible()

@@ -15,19 +15,23 @@ final class StartupCoordinator: CoordinatorProtocol {
     
     init() {
         hostVC = UINavigationController()
+        hostVC.isNavigationBarHidden = true
         
         nodes = [SplashNode(coordinator: self)]
         set(nodes: nodes)
     }
-    
     
 }
 
 extension StartupCoordinator {
     
     func showProfileSelection() {
-        let profileSelectionNode = SplashNode(coordinator: self)
+        let profileSelectionNode = ProfileSelectionNode(coordinator: self)
         nodes += [profileSelectionNode]
         show(node: profileSelectionNode)
+    }
+    
+    func showProfileLoading() {
+        // TODO: - ProfileLoading Screen
     }
 }

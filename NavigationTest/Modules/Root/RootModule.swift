@@ -17,9 +17,6 @@ final class RootModule: ModuleProtocol {
         coordinator = RootCoordinator()
 
         let splashModule = StartupModule()
-        let homeModule = HomeModule()
-        let profileModule = ProfileModule()
-        
         submodules = [splashModule]
         
         coordinator.set(viewControllers: [splashModule.coordinator.hostVC])

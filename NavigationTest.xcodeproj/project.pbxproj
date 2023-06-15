@@ -42,6 +42,11 @@
 		FC0193722A39F9CF00D8E5E9 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0193712A39F9CF00D8E5E9 /* SplashView.swift */; };
 		FC0193742A39FA0800D8E5E9 /* SplashPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0193732A39FA0800D8E5E9 /* SplashPresenter.swift */; };
 		FC0193762A39FA3E00D8E5E9 /* SplashInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0193752A39FA3E00D8E5E9 /* SplashInteractor.swift */; };
+		FC01937B2A3B093E00D8E5E9 /* ProfileSelectionNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC01937A2A3B093E00D8E5E9 /* ProfileSelectionNode.swift */; };
+		FC0193802A3B09E900D8E5E9 /* ProfileSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC01937F2A3B09E900D8E5E9 /* ProfileSelectionView.swift */; };
+		FC0193822A3B0ADC00D8E5E9 /* ProfileSelectionInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0193812A3B0ADC00D8E5E9 /* ProfileSelectionInteractor.swift */; };
+		FC0193842A3B0B9700D8E5E9 /* ProfileSelectionPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0193832A3B0B9700D8E5E9 /* ProfileSelectionPresenter.swift */; };
+		FC318DEF2A3B1D6400E4DC30 /* UIStackView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC318DEE2A3B1D6400E4DC30 /* UIStackView+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -81,6 +86,11 @@
 		FC0193712A39F9CF00D8E5E9 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 		FC0193732A39FA0800D8E5E9 /* SplashPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashPresenter.swift; sourceTree = "<group>"; };
 		FC0193752A39FA3E00D8E5E9 /* SplashInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashInteractor.swift; sourceTree = "<group>"; };
+		FC01937A2A3B093E00D8E5E9 /* ProfileSelectionNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileSelectionNode.swift; sourceTree = "<group>"; };
+		FC01937F2A3B09E900D8E5E9 /* ProfileSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileSelectionView.swift; sourceTree = "<group>"; };
+		FC0193812A3B0ADC00D8E5E9 /* ProfileSelectionInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileSelectionInteractor.swift; sourceTree = "<group>"; };
+		FC0193832A3B0B9700D8E5E9 /* ProfileSelectionPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileSelectionPresenter.swift; sourceTree = "<group>"; };
+		FC318DEE2A3B1D6400E4DC30 /* UIStackView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -208,6 +218,7 @@
 			children = (
 				FC0193592A39F07100D8E5E9 /* UILabel+.swift */,
 				FC01935B2A39F12C00D8E5E9 /* UIView+.swift */,
+				FC318DEE2A3B1D6400E4DC30 /* UIStackView+.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -287,6 +298,7 @@
 		FC0193672A39F52100D8E5E9 /* Startup */ = {
 			isa = PBXGroup;
 			children = (
+				FC0193792A3B092700D8E5E9 /* ProfileSelection */,
 				FC0193772A3B07CA00D8E5E9 /* Splash */,
 				FC01936A2A39F56A00D8E5E9 /* StartupModule.swift */,
 				FC01936C2A39F57400D8E5E9 /* StartupCoordinator.swift */,
@@ -327,6 +339,41 @@
 				FC0193682A39F55E00D8E5E9 /* SplashNode.swift */,
 			);
 			path = Splash;
+			sourceTree = "<group>";
+		};
+		FC0193792A3B092700D8E5E9 /* ProfileSelection */ = {
+			isa = PBXGroup;
+			children = (
+				FC01937C2A3B09C800D8E5E9 /* View */,
+				FC01937D2A3B09CC00D8E5E9 /* Interactor */,
+				FC01937E2A3B09D200D8E5E9 /* Presenter */,
+				FC01937A2A3B093E00D8E5E9 /* ProfileSelectionNode.swift */,
+			);
+			path = ProfileSelection;
+			sourceTree = "<group>";
+		};
+		FC01937C2A3B09C800D8E5E9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FC01937F2A3B09E900D8E5E9 /* ProfileSelectionView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FC01937D2A3B09CC00D8E5E9 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				FC0193812A3B0ADC00D8E5E9 /* ProfileSelectionInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		FC01937E2A3B09D200D8E5E9 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				FC0193832A3B0B9700D8E5E9 /* ProfileSelectionPresenter.swift */,
+			);
+			path = Presenter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -424,19 +471,24 @@
 				2C0940972A31FD14002089B1 /* RootCoordinator.swift in Sources */,
 				FC0193722A39F9CF00D8E5E9 /* SplashView.swift in Sources */,
 				2C0940A52A320EB4002089B1 /* HomeNavigationVC.swift in Sources */,
+				FC0193802A3B09E900D8E5E9 /* ProfileSelectionView.swift in Sources */,
 				FC0193692A39F55E00D8E5E9 /* SplashNode.swift in Sources */,
 				2C0940AB2A3231B6002089B1 /* HomeDetailView.swift in Sources */,
 				FC01935A2A39F07100D8E5E9 /* UILabel+.swift in Sources */,
 				2C0940A32A320EAA002089B1 /* HomeCoordinator.swift in Sources */,
 				FC0193762A39FA3E00D8E5E9 /* SplashInteractor.swift in Sources */,
+				FC01937B2A3B093E00D8E5E9 /* ProfileSelectionNode.swift in Sources */,
 				FC0193742A39FA0800D8E5E9 /* SplashPresenter.swift in Sources */,
 				FC01936D2A39F57400D8E5E9 /* StartupCoordinator.swift in Sources */,
 				2C0940A92A3231AA002089B1 /* HomeDetailInteractor.swift in Sources */,
 				2C0940A72A323195002089B1 /* HomeDetailPresenter.swift in Sources */,
+				FC0193822A3B0ADC00D8E5E9 /* ProfileSelectionInteractor.swift in Sources */,
 				2C09407E2A31E579002089B1 /* HomeListInteractor.swift in Sources */,
 				2C0940612A31E357002089B1 /* SceneDelegate.swift in Sources */,
+				FC0193842A3B0B9700D8E5E9 /* ProfileSelectionPresenter.swift in Sources */,
 				2C0940782A31E470002089B1 /* VIP.swift in Sources */,
 				2C09408D2A31F976002089B1 /* ProfilePresenter.swift in Sources */,
+				FC318DEF2A3B1D6400E4DC30 /* UIStackView+.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
