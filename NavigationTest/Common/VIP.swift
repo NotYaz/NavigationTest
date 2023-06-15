@@ -56,7 +56,7 @@ protocol NodeProtocol {
     associatedtype Coordinator: CoordinatorProtocol
     
     var view: View { get }
-    var intercator: Interactor { get }
+    var interactor: Interactor { get }
     var presenter: Presenter { get }
     
     var showStyle: ShowStyle { get }

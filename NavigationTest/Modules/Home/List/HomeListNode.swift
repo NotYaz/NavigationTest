@@ -10,7 +10,7 @@ import Foundation
 final class HomeListNode: NodeProtocol {
 
     var presenter: HomeListPresenter
-    var intercator: HomeListInteractor
+    var interactor: HomeListInteractor
     var view: HomeListView
     
     weak var coordinator: HomeCoordinator?
@@ -21,8 +21,8 @@ final class HomeListNode: NodeProtocol {
     
     init(coordinator: HomeCoordinator) {
         presenter = HomeListPresenter()
-        intercator = HomeListInteractor(presenter: presenter, coordinator: coordinator)
-        view = HomeListView(interactor: intercator)
+        interactor = HomeListInteractor(presenter: presenter, coordinator: coordinator)
+        view = HomeListView(interactor: interactor)
         presenter.view = view
         
         self.coordinator = coordinator

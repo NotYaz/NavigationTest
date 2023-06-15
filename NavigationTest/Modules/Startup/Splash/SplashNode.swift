@@ -10,7 +10,7 @@ import Foundation
 final class SplashNode: NodeProtocol {
 
     var presenter: SplashPresenter
-    var intercator: SplashInteractor
+    var interactor: SplashInteractor
     var view: SplashView
     
     weak var coordinator: StartupCoordinator?
@@ -21,8 +21,8 @@ final class SplashNode: NodeProtocol {
     
     init(coordinator: StartupCoordinator) {
         presenter = SplashPresenter()
-        intercator = SplashInteractor(presenter: presenter, coordinator: coordinator)
-        view = SplashView(interactor: intercator)
+        interactor = SplashInteractor(presenter: presenter, coordinator: coordinator)
+        view = SplashView(interactor: interactor)
         presenter.view = view
         
         self.coordinator = coordinator

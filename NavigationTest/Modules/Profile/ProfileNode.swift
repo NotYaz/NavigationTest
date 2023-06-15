@@ -10,7 +10,7 @@ import Foundation
 final class ProfileNode: NodeProtocol {
 
     var presenter: ProfilePresenter
-    var intercator: ProfileInteractor
+    var interactor: ProfileInteractor
     var view: ProfileView
     
     weak var coordinator: ProfileCoordinator?
@@ -21,8 +21,8 @@ final class ProfileNode: NodeProtocol {
     
     init(coordinator: ProfileCoordinator) {
         presenter = ProfilePresenter()
-        intercator = ProfileInteractor(presenter: presenter, coordinator: coordinator)
-        view = ProfileView(interactor: intercator)
+        interactor = ProfileInteractor(presenter: presenter, coordinator: coordinator)
+        view = ProfileView(interactor: interactor)
         presenter.view = view
         
         self.coordinator = coordinator
