@@ -15,13 +15,14 @@ final class RootModule: ModuleProtocol {
     
     init() {
         coordinator = RootCoordinator()
-        
+
+        let splashModule = StartupModule()
         let homeModule = HomeModule()
         let profileModule = ProfileModule()
         
-        submodules = [homeModule, profileModule]
+        submodules = [splashModule]
         
-        coordinator.set(viewControllers: [homeModule.coordinator.hostVC, profileModule.coordinator.hostVC])
+        coordinator.set(viewControllers: [splashModule.coordinator.hostVC])
     }
     
 }
