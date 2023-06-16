@@ -47,6 +47,11 @@
 		FC0193822A3B0ADC00D8E5E9 /* ProfileSelectionInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0193812A3B0ADC00D8E5E9 /* ProfileSelectionInteractor.swift */; };
 		FC0193842A3B0B9700D8E5E9 /* ProfileSelectionPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0193832A3B0B9700D8E5E9 /* ProfileSelectionPresenter.swift */; };
 		FC318DEF2A3B1D6400E4DC30 /* UIStackView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC318DEE2A3B1D6400E4DC30 /* UIStackView+.swift */; };
+		FC318DF52A3B38A000E4DC30 /* ProfileLoadingNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC318DF42A3B38A000E4DC30 /* ProfileLoadingNode.swift */; };
+		FC318DF72A3B390800E4DC30 /* ProfileLoadingPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC318DF62A3B390800E4DC30 /* ProfileLoadingPresenter.swift */; };
+		FC318DF92A3B3DA100E4DC30 /* ProfileLoadingInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC318DF82A3B3DA100E4DC30 /* ProfileLoadingInteractor.swift */; };
+		FC318DFB2A3B3DBF00E4DC30 /* ProfileLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC318DFA2A3B3DBF00E4DC30 /* ProfileLoadingView.swift */; };
+		FC318DFE2A3C4DAF00E4DC30 /* NVActivityIndicatorView in Frameworks */ = {isa = PBXBuildFile; productRef = FC318DFD2A3C4DAF00E4DC30 /* NVActivityIndicatorView */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -91,6 +96,10 @@
 		FC0193812A3B0ADC00D8E5E9 /* ProfileSelectionInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileSelectionInteractor.swift; sourceTree = "<group>"; };
 		FC0193832A3B0B9700D8E5E9 /* ProfileSelectionPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileSelectionPresenter.swift; sourceTree = "<group>"; };
 		FC318DEE2A3B1D6400E4DC30 /* UIStackView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+.swift"; sourceTree = "<group>"; };
+		FC318DF42A3B38A000E4DC30 /* ProfileLoadingNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileLoadingNode.swift; sourceTree = "<group>"; };
+		FC318DF62A3B390800E4DC30 /* ProfileLoadingPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileLoadingPresenter.swift; sourceTree = "<group>"; };
+		FC318DF82A3B3DA100E4DC30 /* ProfileLoadingInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileLoadingInteractor.swift; sourceTree = "<group>"; };
+		FC318DFA2A3B3DBF00E4DC30 /* ProfileLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileLoadingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +107,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC318DFE2A3C4DAF00E4DC30 /* NVActivityIndicatorView in Frameworks */,
 				FC0193562A39EB9F00D8E5E9 /* PinLayout in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -298,6 +308,7 @@
 		FC0193672A39F52100D8E5E9 /* Startup */ = {
 			isa = PBXGroup;
 			children = (
+				FC318DF02A3B387400E4DC30 /* ProfileLoading */,
 				FC0193792A3B092700D8E5E9 /* ProfileSelection */,
 				FC0193772A3B07CA00D8E5E9 /* Splash */,
 				FC01936A2A39F56A00D8E5E9 /* StartupModule.swift */,
@@ -376,6 +387,41 @@
 			path = Presenter;
 			sourceTree = "<group>";
 		};
+		FC318DF02A3B387400E4DC30 /* ProfileLoading */ = {
+			isa = PBXGroup;
+			children = (
+				FC318DF12A3B387E00E4DC30 /* View */,
+				FC318DF22A3B388200E4DC30 /* Interactor */,
+				FC318DF32A3B388C00E4DC30 /* Presenter */,
+				FC318DF42A3B38A000E4DC30 /* ProfileLoadingNode.swift */,
+			);
+			path = ProfileLoading;
+			sourceTree = "<group>";
+		};
+		FC318DF12A3B387E00E4DC30 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FC318DFA2A3B3DBF00E4DC30 /* ProfileLoadingView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FC318DF22A3B388200E4DC30 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				FC318DF82A3B3DA100E4DC30 /* ProfileLoadingInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		FC318DF32A3B388C00E4DC30 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				FC318DF62A3B390800E4DC30 /* ProfileLoadingPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -394,6 +440,7 @@
 			name = NavigationTest;
 			packageProductDependencies = (
 				FC0193552A39EB9F00D8E5E9 /* PinLayout */,
+				FC318DFD2A3C4DAF00E4DC30 /* NVActivityIndicatorView */,
 			);
 			productName = NavigationTest;
 			productReference = 2C09405B2A31E357002089B1 /* NavigationTest.app */;
@@ -425,6 +472,7 @@
 			mainGroup = 2C0940522A31E357002089B1;
 			packageReferences = (
 				FC0193542A39EB9F00D8E5E9 /* XCRemoteSwiftPackageReference "PinLayout" */,
+				FC318DFC2A3C4DAF00E4DC30 /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */,
 			);
 			productRefGroup = 2C09405C2A31E357002089B1 /* Products */;
 			projectDirPath = "";
@@ -454,7 +502,10 @@
 			files = (
 				2C0940822A31E6B7002089B1 /* HomeListNode.swift in Sources */,
 				2C0940AD2A3231C3002089B1 /* HomeDetailNode.swift in Sources */,
+				FC318DF72A3B390800E4DC30 /* ProfileLoadingPresenter.swift in Sources */,
+				FC318DF92A3B3DA100E4DC30 /* ProfileLoadingInteractor.swift in Sources */,
 				2C09407C2A31E56A002089B1 /* HomeListPresenter.swift in Sources */,
+				FC318DFB2A3B3DBF00E4DC30 /* ProfileLoadingView.swift in Sources */,
 				2C0940802A31E58A002089B1 /* HomeListView.swift in Sources */,
 				2C0940932A31F9A1002089B1 /* ProfileNode.swift in Sources */,
 				2C0940A12A320E7D002089B1 /* HomeModule.swift in Sources */,
@@ -482,6 +533,7 @@
 				FC01936D2A39F57400D8E5E9 /* StartupCoordinator.swift in Sources */,
 				2C0940A92A3231AA002089B1 /* HomeDetailInteractor.swift in Sources */,
 				2C0940A72A323195002089B1 /* HomeDetailPresenter.swift in Sources */,
+				FC318DF52A3B38A000E4DC30 /* ProfileLoadingNode.swift in Sources */,
 				FC0193822A3B0ADC00D8E5E9 /* ProfileSelectionInteractor.swift in Sources */,
 				2C09407E2A31E579002089B1 /* HomeListInteractor.swift in Sources */,
 				2C0940612A31E357002089B1 /* SceneDelegate.swift in Sources */,
@@ -704,6 +756,14 @@
 				minimumVersion = 1.0.0;
 			};
 		};
+		FC318DFC2A3C4DAF00E4DC30 /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ninjaprox/NVActivityIndicatorView.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -711,6 +771,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = FC0193542A39EB9F00D8E5E9 /* XCRemoteSwiftPackageReference "PinLayout" */;
 			productName = PinLayout;
+		};
+		FC318DFD2A3C4DAF00E4DC30 /* NVActivityIndicatorView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FC318DFC2A3C4DAF00E4DC30 /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */;
+			productName = NVActivityIndicatorView;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

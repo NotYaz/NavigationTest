@@ -32,6 +32,8 @@ extension StartupCoordinator {
     }
     
     func showProfileLoading() {
-        // TODO: - ProfileLoading Screen
+        let profileLoadingnNode = ProfileLoadingNode(coordinator: self)
+        nodes += [profileLoadingnNode]
+        show(node: profileLoadingnNode)
     }
 }

@@ -46,6 +46,11 @@ enum ShowStyle {
     case modal
     case push
     case splash
+    case custom(AnimationType)
+    
+    enum AnimationType {
+        case changeRoot
+    }
 }
 
 protocol NodeProtocol {
@@ -91,6 +96,17 @@ extension CoordinatorProtocol where Container: UINavigationController {
             hostVC.pushViewController(node.view, animated: true)
         case .modal:
             hostVC.present(node.view, animated: true)
+        case .custom(let type):
+            guard let window = UIApplication.shared.connectedScenes.compactMap({ ($0 as? UIWindowScene)?.keyWindow }).last else { return }
+            window.rootViewController = node.view
+
+            if type == .changeRoot {
+                UIView.transition(with: window,
+                                      duration: 0.3,
+                                      options: .transitionCrossDissolve,
+                                      animations: nil)
+            }
+                
         default:
             fatalError("showStyle not supported")
         }
