@@ -49,6 +49,10 @@ final class ProfileLoadingView: UIViewController, ViewProtocol {
         super.viewWillAppear(animated)
         
         spinner.startAnimating()
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) { [weak self] in
+            self?.interactor?.showMainTabs()
+        }
     }
     
     override func viewWillDisappear(_ animated: Bool) {

@@ -17,4 +17,8 @@ final class ProfileLoadingInteractor: InteractorProtocol {
         self.presenter = presenter
         self.coordinator = coordinator
     }
+    
+    func showMainTabs() {
+        coordinator?.showMainTabs()
+    }
 }
