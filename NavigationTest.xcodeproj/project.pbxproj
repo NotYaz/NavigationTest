@@ -74,6 +74,10 @@
 		FCE37A082A4084D300BBC73A /* GenresInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE37A072A4084D300BBC73A /* GenresInteractor.swift */; };
 		FCE37A0A2A40851A00BBC73A /* GenresPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE37A092A40851A00BBC73A /* GenresPresenter.swift */; };
 		FCE37A0C2A40853B00BBC73A /* GenresNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE37A0B2A40853B00BBC73A /* GenresNode.swift */; };
+		FCE37A172A41A5A900BBC73A /* MovieCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE37A162A41A5A900BBC73A /* MovieCardView.swift */; };
+		FCE37A192A41A5B100BBC73A /* MovieCardPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE37A182A41A5B100BBC73A /* MovieCardPresenter.swift */; };
+		FCE37A1B2A41A5BC00BBC73A /* MovieCardInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE37A1A2A41A5BC00BBC73A /* MovieCardInteractor.swift */; };
+		FCE37A202A41A64100BBC73A /* MovieCardNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE37A1F2A41A64100BBC73A /* MovieCardNode.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -144,6 +148,10 @@
 		FCE37A072A4084D300BBC73A /* GenresInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenresInteractor.swift; sourceTree = "<group>"; };
 		FCE37A092A40851A00BBC73A /* GenresPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenresPresenter.swift; sourceTree = "<group>"; };
 		FCE37A0B2A40853B00BBC73A /* GenresNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenresNode.swift; sourceTree = "<group>"; };
+		FCE37A162A41A5A900BBC73A /* MovieCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCardView.swift; sourceTree = "<group>"; };
+		FCE37A182A41A5B100BBC73A /* MovieCardPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCardPresenter.swift; sourceTree = "<group>"; };
+		FCE37A1A2A41A5BC00BBC73A /* MovieCardInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCardInteractor.swift; sourceTree = "<group>"; };
+		FCE37A1F2A41A64100BBC73A /* MovieCardNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCardNode.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -207,6 +215,7 @@
 		2C0940742A31E43A002089B1 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				FCE37A152A41A49A00BBC73A /* MovieCard */,
 				FCE37A012A4081AB00BBC73A /* Genres */,
 				2C0940A02A320E7D002089B1 /* HomeModule.swift */,
 				2C0940A22A320EAA002089B1 /* HomeCoordinator.swift */,
@@ -599,6 +608,41 @@
 			path = Presenter;
 			sourceTree = "<group>";
 		};
+		FCE37A152A41A49A00BBC73A /* MovieCard */ = {
+			isa = PBXGroup;
+			children = (
+				FCE37A1C2A41A5D000BBC73A /* View */,
+				FCE37A1D2A41A5D600BBC73A /* Interactor */,
+				FCE37A1E2A41A5DC00BBC73A /* Presenter */,
+				FCE37A1F2A41A64100BBC73A /* MovieCardNode.swift */,
+			);
+			path = MovieCard;
+			sourceTree = "<group>";
+		};
+		FCE37A1C2A41A5D000BBC73A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FCE37A162A41A5A900BBC73A /* MovieCardView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FCE37A1D2A41A5D600BBC73A /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				FCE37A1A2A41A5BC00BBC73A /* MovieCardInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		FCE37A1E2A41A5DC00BBC73A /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				FCE37A182A41A5B100BBC73A /* MovieCardPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -680,6 +724,7 @@
 				2C0940822A31E6B7002089B1 /* HomeListNode.swift in Sources */,
 				2C0940AD2A3231C3002089B1 /* HomeDetailNode.swift in Sources */,
 				FC318E1E2A3C633600E4DC30 /* BagModule.swift in Sources */,
+				FCE37A172A41A5A900BBC73A /* MovieCardView.swift in Sources */,
 				FC318DF72A3B390800E4DC30 /* ProfileLoadingPresenter.swift in Sources */,
 				FCE37A002A4053DE00BBC73A /* BagPresenter.swift in Sources */,
 				FC318DF92A3B3DA100E4DC30 /* ProfileLoadingInteractor.swift in Sources */,
@@ -687,6 +732,7 @@
 				FCE379F62A40516D00BBC73A /* BagCoordinator.swift in Sources */,
 				2C09407C2A31E56A002089B1 /* HomeListPresenter.swift in Sources */,
 				FC318DFB2A3B3DBF00E4DC30 /* ProfileLoadingView.swift in Sources */,
+				FCE37A1B2A41A5BC00BBC73A /* MovieCardInteractor.swift in Sources */,
 				2C0940802A31E58A002089B1 /* HomeListView.swift in Sources */,
 				2C0940932A31F9A1002089B1 /* ProfileNode.swift in Sources */,
 				2C0940A12A320E7D002089B1 /* HomeModule.swift in Sources */,
@@ -737,6 +783,8 @@
 				2C09407E2A31E579002089B1 /* HomeListInteractor.swift in Sources */,
 				2C0940612A31E357002089B1 /* SceneDelegate.swift in Sources */,
 				FC0193842A3B0B9700D8E5E9 /* ProfileSelectionPresenter.swift in Sources */,
+				FCE37A192A41A5B100BBC73A /* MovieCardPresenter.swift in Sources */,
+				FCE37A202A41A64100BBC73A /* MovieCardNode.swift in Sources */,
 				2C0940782A31E470002089B1 /* VIP.swift in Sources */,
 				2C09408D2A31F976002089B1 /* ProfilePresenter.swift in Sources */,
 				FC318DEF2A3B1D6400E4DC30 /* UIStackView+.swift in Sources */,
