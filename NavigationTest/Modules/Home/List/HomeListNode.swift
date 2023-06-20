@@ -16,7 +16,7 @@ final class HomeListNode: NodeProtocol {
     weak var coordinator: HomeCoordinator?
     
     var showStyle: ShowStyle {
-        .root
+        .tabbar
     }
     
     init(coordinator: HomeCoordinator) {

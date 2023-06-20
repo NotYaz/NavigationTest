@@ -18,8 +18,7 @@ final class HomeCoordinator: CoordinatorProtocol {
         nodes = [HomeListNode(coordinator: self)]
         set(nodes: nodes)
     }
-    
-    
+
 }
 
 extension HomeCoordinator {

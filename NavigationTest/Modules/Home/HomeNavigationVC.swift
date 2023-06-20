@@ -12,7 +12,11 @@ final class HomeNavgationVC: UINavigationController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        tabBarItem.title = "HOME"
+        navigationBar.isHidden = true
     }
     
+}
+
+extension HomeNavgationVC: NavigationController {
+    var name: String { "Главная" }
 }
