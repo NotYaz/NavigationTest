@@ -52,6 +52,8 @@
 		FC318DF92A3B3DA100E4DC30 /* ProfileLoadingInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC318DF82A3B3DA100E4DC30 /* ProfileLoadingInteractor.swift */; };
 		FC318DFB2A3B3DBF00E4DC30 /* ProfileLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC318DFA2A3B3DBF00E4DC30 /* ProfileLoadingView.swift */; };
 		FC318DFE2A3C4DAF00E4DC30 /* NVActivityIndicatorView in Frameworks */ = {isa = PBXBuildFile; productRef = FC318DFD2A3C4DAF00E4DC30 /* NVActivityIndicatorView */; };
+		FC318E022A3C517400E4DC30 /* TabbarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC318E012A3C517400E4DC30 /* TabbarCoordinator.swift */; };
+		FC318E042A3C520900E4DC30 /* TabbarModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC318E032A3C520900E4DC30 /* TabbarModule.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -100,6 +102,8 @@
 		FC318DF62A3B390800E4DC30 /* ProfileLoadingPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileLoadingPresenter.swift; sourceTree = "<group>"; };
 		FC318DF82A3B3DA100E4DC30 /* ProfileLoadingInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileLoadingInteractor.swift; sourceTree = "<group>"; };
 		FC318DFA2A3B3DBF00E4DC30 /* ProfileLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileLoadingView.swift; sourceTree = "<group>"; };
+		FC318E012A3C517400E4DC30 /* TabbarCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarCoordinator.swift; sourceTree = "<group>"; };
+		FC318E032A3C520900E4DC30 /* TabbarModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarModule.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +153,7 @@
 		2C0940722A31E3BC002089B1 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				FC318E002A3C505900E4DC30 /* Tabbar */,
 				FC0193672A39F52100D8E5E9 /* Startup */,
 				2C0940832A31F05C002089B1 /* Root */,
 				2C0940752A31E445002089B1 /* Profile */,
@@ -422,6 +427,15 @@
 			path = Presenter;
 			sourceTree = "<group>";
 		};
+		FC318E002A3C505900E4DC30 /* Tabbar */ = {
+			isa = PBXGroup;
+			children = (
+				FC318E012A3C517400E4DC30 /* TabbarCoordinator.swift */,
+				FC318E032A3C520900E4DC30 /* TabbarModule.swift */,
+			);
+			path = Tabbar;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -528,12 +542,14 @@
 				FC01935A2A39F07100D8E5E9 /* UILabel+.swift in Sources */,
 				2C0940A32A320EAA002089B1 /* HomeCoordinator.swift in Sources */,
 				FC0193762A39FA3E00D8E5E9 /* SplashInteractor.swift in Sources */,
+				FC318E022A3C517400E4DC30 /* TabbarCoordinator.swift in Sources */,
 				FC01937B2A3B093E00D8E5E9 /* ProfileSelectionNode.swift in Sources */,
 				FC0193742A39FA0800D8E5E9 /* SplashPresenter.swift in Sources */,
 				FC01936D2A39F57400D8E5E9 /* StartupCoordinator.swift in Sources */,
 				2C0940A92A3231AA002089B1 /* HomeDetailInteractor.swift in Sources */,
 				2C0940A72A323195002089B1 /* HomeDetailPresenter.swift in Sources */,
 				FC318DF52A3B38A000E4DC30 /* ProfileLoadingNode.swift in Sources */,
+				FC318E042A3C520900E4DC30 /* TabbarModule.swift in Sources */,
 				FC0193822A3B0ADC00D8E5E9 /* ProfileSelectionInteractor.swift in Sources */,
 				2C09407E2A31E579002089B1 /* HomeListInteractor.swift in Sources */,
 				2C0940612A31E357002089B1 /* SceneDelegate.swift in Sources */,
