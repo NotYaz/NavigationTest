@@ -55,6 +55,13 @@
 		FC318E022A3C517400E4DC30 /* TabbarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC318E012A3C517400E4DC30 /* TabbarCoordinator.swift */; };
 		FC318E042A3C520900E4DC30 /* TabbarModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC318E032A3C520900E4DC30 /* TabbarModule.swift */; };
 		FC318E072A3C5A6A00E4DC30 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC318E062A3C5A6A00E4DC30 /* NavigationController.swift */; };
+		FC318E0D2A3C5E8600E4DC30 /* CatalogueNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC318E0C2A3C5E8600E4DC30 /* CatalogueNode.swift */; };
+		FC318E0F2A3C5ED000E4DC30 /* CatalogueModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC318E0E2A3C5ED000E4DC30 /* CatalogueModule.swift */; };
+		FC318E112A3C5EE100E4DC30 /* CatalogueCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC318E102A3C5EE100E4DC30 /* CatalogueCoordinator.swift */; };
+		FC318E162A3C5F1400E4DC30 /* CatalogueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC318E152A3C5F1400E4DC30 /* CatalogueView.swift */; };
+		FC318E182A3C5F2600E4DC30 /* CatalogueInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC318E172A3C5F2600E4DC30 /* CatalogueInteractor.swift */; };
+		FC318E1A2A3C5F3600E4DC30 /* CataloguePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC318E192A3C5F3600E4DC30 /* CataloguePresenter.swift */; };
+		FC318E1C2A3C61FC00E4DC30 /* CatalogueNavigationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC318E1B2A3C61FC00E4DC30 /* CatalogueNavigationVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -106,6 +113,13 @@
 		FC318E012A3C517400E4DC30 /* TabbarCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarCoordinator.swift; sourceTree = "<group>"; };
 		FC318E032A3C520900E4DC30 /* TabbarModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarModule.swift; sourceTree = "<group>"; };
 		FC318E062A3C5A6A00E4DC30 /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
+		FC318E0C2A3C5E8600E4DC30 /* CatalogueNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogueNode.swift; sourceTree = "<group>"; };
+		FC318E0E2A3C5ED000E4DC30 /* CatalogueModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogueModule.swift; sourceTree = "<group>"; };
+		FC318E102A3C5EE100E4DC30 /* CatalogueCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogueCoordinator.swift; sourceTree = "<group>"; };
+		FC318E152A3C5F1400E4DC30 /* CatalogueView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogueView.swift; sourceTree = "<group>"; };
+		FC318E172A3C5F2600E4DC30 /* CatalogueInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogueInteractor.swift; sourceTree = "<group>"; };
+		FC318E192A3C5F3600E4DC30 /* CataloguePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CataloguePresenter.swift; sourceTree = "<group>"; };
+		FC318E1B2A3C61FC00E4DC30 /* CatalogueNavigationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogueNavigationVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +174,7 @@
 				2C0940832A31F05C002089B1 /* Root */,
 				2C0940752A31E445002089B1 /* Profile */,
 				2C0940742A31E43A002089B1 /* Home */,
+				FC318E0B2A3C5E6600E4DC30 /* Catalogue */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -446,6 +461,44 @@
 			path = Protocols;
 			sourceTree = "<group>";
 		};
+		FC318E0B2A3C5E6600E4DC30 /* Catalogue */ = {
+			isa = PBXGroup;
+			children = (
+				FC318E122A3C5EEC00E4DC30 /* View */,
+				FC318E132A3C5EF000E4DC30 /* Interactor */,
+				FC318E142A3C5EFA00E4DC30 /* Presenter */,
+				FC318E0C2A3C5E8600E4DC30 /* CatalogueNode.swift */,
+				FC318E0E2A3C5ED000E4DC30 /* CatalogueModule.swift */,
+				FC318E102A3C5EE100E4DC30 /* CatalogueCoordinator.swift */,
+				FC318E1B2A3C61FC00E4DC30 /* CatalogueNavigationVC.swift */,
+			);
+			path = Catalogue;
+			sourceTree = "<group>";
+		};
+		FC318E122A3C5EEC00E4DC30 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FC318E152A3C5F1400E4DC30 /* CatalogueView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FC318E132A3C5EF000E4DC30 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				FC318E172A3C5F2600E4DC30 /* CatalogueInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		FC318E142A3C5EFA00E4DC30 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				FC318E192A3C5F3600E4DC30 /* CataloguePresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -527,6 +580,7 @@
 				2C0940822A31E6B7002089B1 /* HomeListNode.swift in Sources */,
 				2C0940AD2A3231C3002089B1 /* HomeDetailNode.swift in Sources */,
 				FC318DF72A3B390800E4DC30 /* ProfileLoadingPresenter.swift in Sources */,
+				FCE37A002A4053DE00BBC73A /* BagPresenter.swift in Sources */,
 				FC318DF92A3B3DA100E4DC30 /* ProfileLoadingInteractor.swift in Sources */,
 				2C09407C2A31E56A002089B1 /* HomeListPresenter.swift in Sources */,
 				FC318DFB2A3B3DBF00E4DC30 /* ProfileLoadingView.swift in Sources */,
@@ -538,17 +592,23 @@
 				2C0940992A32042C002089B1 /* RootVC.swift in Sources */,
 				2C09408F2A31F981002089B1 /* ProfileInteractor.swift in Sources */,
 				FC01935C2A39F12C00D8E5E9 /* UIView+.swift in Sources */,
+				FC318E1A2A3C5F3600E4DC30 /* CataloguePresenter.swift in Sources */,
+				FC318E112A3C5EE100E4DC30 /* CatalogueCoordinator.swift in Sources */,
 				2C09409D2A320B6C002089B1 /* ProfileCoordinator.swift in Sources */,
 				2C0940912A31F990002089B1 /* ProfileView.swift in Sources */,
 				2C09409B2A320B41002089B1 /* ProfileModule.swift in Sources */,
 				FC01936B2A39F56A00D8E5E9 /* StartupModule.swift in Sources */,
+				FC318E1C2A3C61FC00E4DC30 /* CatalogueNavigationVC.swift in Sources */,
 				2C09405F2A31E357002089B1 /* AppDelegate.swift in Sources */,
 				2C0940972A31FD14002089B1 /* RootCoordinator.swift in Sources */,
 				FC0193722A39F9CF00D8E5E9 /* SplashView.swift in Sources */,
+				FC318E0D2A3C5E8600E4DC30 /* CatalogueNode.swift in Sources */,
 				2C0940A52A320EB4002089B1 /* HomeNavigationVC.swift in Sources */,
 				FC0193802A3B09E900D8E5E9 /* ProfileSelectionView.swift in Sources */,
 				FC0193692A39F55E00D8E5E9 /* SplashNode.swift in Sources */,
 				2C0940AB2A3231B6002089B1 /* HomeDetailView.swift in Sources */,
+				FC318E0F2A3C5ED000E4DC30 /* CatalogueModule.swift in Sources */,
+				FC318E182A3C5F2600E4DC30 /* CatalogueInteractor.swift in Sources */,
 				FC01935A2A39F07100D8E5E9 /* UILabel+.swift in Sources */,
 				2C0940A32A320EAA002089B1 /* HomeCoordinator.swift in Sources */,
 				FC0193762A39FA3E00D8E5E9 /* SplashInteractor.swift in Sources */,
@@ -560,6 +620,7 @@
 				FC318E072A3C5A6A00E4DC30 /* NavigationController.swift in Sources */,
 				2C0940A72A323195002089B1 /* HomeDetailPresenter.swift in Sources */,
 				FC318DF52A3B38A000E4DC30 /* ProfileLoadingNode.swift in Sources */,
+				FC318E162A3C5F1400E4DC30 /* CatalogueView.swift in Sources */,
 				FC318E042A3C520900E4DC30 /* TabbarModule.swift in Sources */,
 				FC0193822A3B0ADC00D8E5E9 /* ProfileSelectionInteractor.swift in Sources */,
 				2C09407E2A31E579002089B1 /* HomeListInteractor.swift in Sources */,
