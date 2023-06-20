@@ -29,4 +29,14 @@ extension HomeCoordinator {
         show(node: detailNode)
     }
     
+    func showGenres() {
+        let genresNode = GenresNode(coordinator: self)
+        nodes += [genresNode]
+        show(node: genresNode)
+    }
+    func goBack() {
+        nodes.removeLast()
+        pop()
+    }
+    
 }

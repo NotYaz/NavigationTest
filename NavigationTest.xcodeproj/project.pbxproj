@@ -70,6 +70,10 @@
 		FCE379FC2A40531500BBC73A /* BagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE379FB2A40531500BBC73A /* BagView.swift */; };
 		FCE379FE2A40539E00BBC73A /* BagInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE379FD2A40539E00BBC73A /* BagInteractor.swift */; };
 		FCE37A002A4053DE00BBC73A /* BagPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE379FF2A4053DE00BBC73A /* BagPresenter.swift */; };
+		FCE37A032A4082C600BBC73A /* GenresView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE37A022A4082C600BBC73A /* GenresView.swift */; };
+		FCE37A082A4084D300BBC73A /* GenresInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE37A072A4084D300BBC73A /* GenresInteractor.swift */; };
+		FCE37A0A2A40851A00BBC73A /* GenresPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE37A092A40851A00BBC73A /* GenresPresenter.swift */; };
+		FCE37A0C2A40853B00BBC73A /* GenresNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE37A0B2A40853B00BBC73A /* GenresNode.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -136,6 +140,10 @@
 		FCE379FB2A40531500BBC73A /* BagView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BagView.swift; sourceTree = "<group>"; };
 		FCE379FD2A40539E00BBC73A /* BagInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BagInteractor.swift; sourceTree = "<group>"; };
 		FCE379FF2A4053DE00BBC73A /* BagPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BagPresenter.swift; sourceTree = "<group>"; };
+		FCE37A022A4082C600BBC73A /* GenresView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenresView.swift; sourceTree = "<group>"; };
+		FCE37A072A4084D300BBC73A /* GenresInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenresInteractor.swift; sourceTree = "<group>"; };
+		FCE37A092A40851A00BBC73A /* GenresPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenresPresenter.swift; sourceTree = "<group>"; };
+		FCE37A0B2A40853B00BBC73A /* GenresNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenresNode.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -199,6 +207,7 @@
 		2C0940742A31E43A002089B1 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				FCE37A012A4081AB00BBC73A /* Genres */,
 				2C0940A02A320E7D002089B1 /* HomeModule.swift */,
 				2C0940A22A320EAA002089B1 /* HomeCoordinator.swift */,
 				2C0940A42A320EB4002089B1 /* HomeNavigationVC.swift */,
@@ -555,6 +564,41 @@
 			path = Presenter;
 			sourceTree = "<group>";
 		};
+		FCE37A012A4081AB00BBC73A /* Genres */ = {
+			isa = PBXGroup;
+			children = (
+				FCE37A042A4084A400BBC73A /* View */,
+				FCE37A052A4084AC00BBC73A /* Interactor */,
+				FCE37A062A4084B600BBC73A /* Presenter */,
+				FCE37A0B2A40853B00BBC73A /* GenresNode.swift */,
+			);
+			path = Genres;
+			sourceTree = "<group>";
+		};
+		FCE37A042A4084A400BBC73A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FCE37A022A4082C600BBC73A /* GenresView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FCE37A052A4084AC00BBC73A /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				FCE37A072A4084D300BBC73A /* GenresInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		FCE37A062A4084B600BBC73A /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				FCE37A092A40851A00BBC73A /* GenresPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -652,6 +696,7 @@
 				2C09408F2A31F981002089B1 /* ProfileInteractor.swift in Sources */,
 				FC01935C2A39F12C00D8E5E9 /* UIView+.swift in Sources */,
 				FC318E1A2A3C5F3600E4DC30 /* CataloguePresenter.swift in Sources */,
+				FCE37A0C2A40853B00BBC73A /* GenresNode.swift in Sources */,
 				FC318E112A3C5EE100E4DC30 /* CatalogueCoordinator.swift in Sources */,
 				FCE379FE2A40539E00BBC73A /* BagInteractor.swift in Sources */,
 				2C09409D2A320B6C002089B1 /* ProfileCoordinator.swift in Sources */,
@@ -664,13 +709,16 @@
 				FC0193722A39F9CF00D8E5E9 /* SplashView.swift in Sources */,
 				FC318E0D2A3C5E8600E4DC30 /* CatalogueNode.swift in Sources */,
 				2C0940A52A320EB4002089B1 /* HomeNavigationVC.swift in Sources */,
+				FCE37A082A4084D300BBC73A /* GenresInteractor.swift in Sources */,
 				FC318E202A3C634300E4DC30 /* BagNavigationVC.swift in Sources */,
 				FC0193802A3B09E900D8E5E9 /* ProfileSelectionView.swift in Sources */,
 				FC0193692A39F55E00D8E5E9 /* SplashNode.swift in Sources */,
+				FCE37A032A4082C600BBC73A /* GenresView.swift in Sources */,
 				2C0940AB2A3231B6002089B1 /* HomeDetailView.swift in Sources */,
 				FC318E0F2A3C5ED000E4DC30 /* CatalogueModule.swift in Sources */,
 				FC318E182A3C5F2600E4DC30 /* CatalogueInteractor.swift in Sources */,
 				FC318E092A3C5E5900E4DC30 /* BagNode.swift in Sources */,
+				FCE37A0A2A40851A00BBC73A /* GenresPresenter.swift in Sources */,
 				FC01935A2A39F07100D8E5E9 /* UILabel+.swift in Sources */,
 				2C0940A32A320EAA002089B1 /* HomeCoordinator.swift in Sources */,
 				FC0193762A39FA3E00D8E5E9 /* SplashInteractor.swift in Sources */,
