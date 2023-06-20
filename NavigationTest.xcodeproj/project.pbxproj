@@ -54,6 +54,7 @@
 		FC318DFE2A3C4DAF00E4DC30 /* NVActivityIndicatorView in Frameworks */ = {isa = PBXBuildFile; productRef = FC318DFD2A3C4DAF00E4DC30 /* NVActivityIndicatorView */; };
 		FC318E022A3C517400E4DC30 /* TabbarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC318E012A3C517400E4DC30 /* TabbarCoordinator.swift */; };
 		FC318E042A3C520900E4DC30 /* TabbarModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC318E032A3C520900E4DC30 /* TabbarModule.swift */; };
+		FC318E072A3C5A6A00E4DC30 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC318E062A3C5A6A00E4DC30 /* NavigationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -104,6 +105,7 @@
 		FC318DFA2A3B3DBF00E4DC30 /* ProfileLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileLoadingView.swift; sourceTree = "<group>"; };
 		FC318E012A3C517400E4DC30 /* TabbarCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarCoordinator.swift; sourceTree = "<group>"; };
 		FC318E032A3C520900E4DC30 /* TabbarModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarModule.swift; sourceTree = "<group>"; };
+		FC318E062A3C5A6A00E4DC30 /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -436,6 +438,14 @@
 			path = Tabbar;
 			sourceTree = "<group>";
 		};
+		FC318E052A3C5A5D00E4DC30 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				FC318E062A3C5A6A00E4DC30 /* NavigationController.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -547,6 +557,7 @@
 				FC0193742A39FA0800D8E5E9 /* SplashPresenter.swift in Sources */,
 				FC01936D2A39F57400D8E5E9 /* StartupCoordinator.swift in Sources */,
 				2C0940A92A3231AA002089B1 /* HomeDetailInteractor.swift in Sources */,
+				FC318E072A3C5A6A00E4DC30 /* NavigationController.swift in Sources */,
 				2C0940A72A323195002089B1 /* HomeDetailPresenter.swift in Sources */,
 				FC318DF52A3B38A000E4DC30 /* ProfileLoadingNode.swift in Sources */,
 				FC318E042A3C520900E4DC30 /* TabbarModule.swift in Sources */,
