@@ -11,8 +11,10 @@ final class ProfileNavigationVC: UINavigationController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        tabBarItem.title = "PROFILE"
     }
     
+}
+
+extension ProfileNavigationVC: NavigationController {
+    var name: String { "Profile" }
 }

@@ -34,6 +34,13 @@ extension HomeCoordinator {
         nodes += [genresNode]
         show(node: genresNode)
     }
+    
+    func showMovieCard() {
+        let movieCardNode = MovieCardNode(coordinator: self)
+        nodes += [movieCardNode]
+        show(node: movieCardNode)
+    }
+    
     func goBack() {
         nodes.removeLast()
         pop()

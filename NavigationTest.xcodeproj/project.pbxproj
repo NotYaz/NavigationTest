@@ -186,6 +186,7 @@
 		2C09405D2A31E357002089B1 /* NavigationTest */ = {
 			isa = PBXGroup;
 			children = (
+				FC318E052A3C5A5D00E4DC30 /* Protocols */,
 				FC0193582A39F05F00D8E5E9 /* Extensions */,
 				2C0940762A31E461002089B1 /* Common */,
 				2C0940722A31E3BC002089B1 /* Modules */,
@@ -217,11 +218,11 @@
 			children = (
 				FCE37A152A41A49A00BBC73A /* MovieCard */,
 				FCE37A012A4081AB00BBC73A /* Genres */,
+				2C09407A2A31E553002089B1 /* Detail */,
+				2C0940792A31E54E002089B1 /* List */,
 				2C0940A02A320E7D002089B1 /* HomeModule.swift */,
 				2C0940A22A320EAA002089B1 /* HomeCoordinator.swift */,
 				2C0940A42A320EB4002089B1 /* HomeNavigationVC.swift */,
-				2C09407A2A31E553002089B1 /* Detail */,
-				2C0940792A31E54E002089B1 /* List */,
 			);
 			path = Home;
 			sourceTree = "<group>";

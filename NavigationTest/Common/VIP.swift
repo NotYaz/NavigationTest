@@ -112,6 +112,10 @@ extension CoordinatorProtocol where Container: UINavigationController {
         }
     }
     
+    func pop() {
+        hostVC.popViewController(animated: true)
+    }
+    
 }
 
 protocol ModuleProtocol {
