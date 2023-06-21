@@ -10,10 +10,14 @@ import Foundation
 final class CatalogueInteractor: InteractorProtocol {
     
     weak var presenter: CataloguePresenter?
-    weak var coordinator: CatalogueCoordinator?
+    var coordinator: CatalogueCoordinator?
     
     init(presenter: CataloguePresenter, coordinator: CatalogueCoordinator) {
         self.presenter = presenter
         self.coordinator = coordinator
+    }
+    
+    func didSelectProfile() {
+        coordinator?.showProfile()
     }
 }

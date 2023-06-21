@@ -18,4 +18,10 @@ final class BagCoordinator: CoordinatorProtocol {
         nodes = [BagNode(coordinator: self)]
         set(nodes: nodes)
     }
+    
+    func showProfile() {
+        let profileNode = ProfileNode(coordinator: ProfileCoordinator())
+        nodes += [profileNode]
+        show(node: profileNode)
+    }
 }

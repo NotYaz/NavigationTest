@@ -35,10 +35,11 @@ final class BagView: UIViewController, ViewProtocol {
         
         let headerView = HeaderView()
         headerView.setup(with: "Мое")
+        headerView.delegate = self
         headerView.translatesAutoresizingMaskIntoConstraints = false
         
         let collectionView = UICollectionView(frame: view.bounds, collectionViewLayout: createLayout())
-        collectionView.register(CatalogueViewCell.self, forCellWithReuseIdentifier: CatalogueViewCell.reuseIdentifier)
+        collectionView.register(CommonViewCell.self, forCellWithReuseIdentifier: CommonViewCell.reuseIdentifier)
         collectionView.translatesAutoresizingMaskIntoConstraints = false
         collectionView.dataSource = self
         collectionView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
@@ -99,14 +100,21 @@ final class BagView: UIViewController, ViewProtocol {
 }
 
 extension BagView: UICollectionViewDataSource {
-    
-    
+
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 48
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CatalogueViewCell.reuseIdentifier, for: indexPath) as? CatalogueViewCell else { return CatalogueViewCell() }
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CommonViewCell.reuseIdentifier, for: indexPath) as? CommonViewCell else { return CommonViewCell() }
         return cell
     }
+}
+
+extension BagView: HeaderViewDelegate {
+
+    func didSelectedProfile() {
+        interactor?.didSelectProfile()
+    }
+    
 }

@@ -41,6 +41,12 @@ extension HomeCoordinator {
         show(node: movieCardNode)
     }
     
+    func showProfile() {
+        let profileNode = ProfileNode(coordinator: ProfileCoordinator())
+        nodes += [profileNode]
+        show(node: profileNode)
+    }
+    
     func goBack() {
         nodes.removeLast()
         pop()

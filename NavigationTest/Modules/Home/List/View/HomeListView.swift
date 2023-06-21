@@ -8,7 +8,7 @@
 import UIKit
 
 final class HomeListView: UIViewController, ViewProtocol {
-    
+
     var interactor: HomeListInteractor?
     
     init(interactor: HomeListInteractor) {
@@ -29,9 +29,10 @@ final class HomeListView: UIViewController, ViewProtocol {
         let headerView = HeaderView()
         headerView.translatesAutoresizingMaskIntoConstraints = false
         headerView.setup(with: "Okko")
+        headerView.delegate = self
         
         let collectionView = UICollectionView(frame: view.bounds, collectionViewLayout: createLayout())
-        collectionView.register(CatalogueViewCell.self, forCellWithReuseIdentifier: CatalogueViewCell.reuseIdentifier)
+        collectionView.register(CommonViewCell.self, forCellWithReuseIdentifier: CommonViewCell.reuseIdentifier)
         collectionView.register(HeaderCollectionView.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: "header")
         collectionView.translatesAutoresizingMaskIntoConstraints = false
         collectionView.dataSource = self
@@ -109,7 +110,7 @@ extension HomeListView: UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CatalogueViewCell.reuseIdentifier, for: indexPath) as? CatalogueViewCell else { return CatalogueViewCell() }
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CommonViewCell.reuseIdentifier, for: indexPath) as? CommonViewCell else { return CommonViewCell() }
         return cell
     }
     
@@ -151,4 +152,12 @@ extension HomeListView: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         interactor?.didSelectItem(indexPath)
     }
+}
+
+extension HomeListView: HeaderViewDelegate {
+    
+    func didSelectedProfile() {
+        interactor?.didSelectedProfile()
+    }
+    
 }

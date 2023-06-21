@@ -10,11 +10,15 @@ import Foundation
 final class BagInteractor: InteractorProtocol {
     
     weak var presenter: BagPresenter?
-    weak var coordinator: BagCoordinator?
+    var coordinator: BagCoordinator?
     
     init(presenter: BagPresenter, coordinator: BagCoordinator) {
         self.presenter = presenter
         self.coordinator = coordinator
+    }
+    
+    func didSelectProfile() {
+        coordinator?.showProfile()
     }
 
 }

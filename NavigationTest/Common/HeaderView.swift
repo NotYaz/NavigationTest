@@ -8,7 +8,13 @@
 import Foundation
 import UIKit
 
+protocol HeaderViewDelegate: AnyObject {
+    func didSelectedProfile()
+}
+
 final class HeaderView: UIView {
+    
+    weak var delegate: HeaderViewDelegate?
     
     private let titleLabel = UILabel(font: .systemFont(ofSize: 18.0, weight: .bold),
                                      color: .black,
@@ -57,6 +63,7 @@ final class HeaderView: UIView {
     
     @objc func didTapProfile(_ sender: UIButton) {
         // TODO: - Open Profile Screen
+        delegate?.didSelectedProfile()
     }
     
 }

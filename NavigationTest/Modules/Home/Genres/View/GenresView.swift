@@ -44,7 +44,7 @@ final class GenresView: UIViewController, ViewProtocol {
 
         let collectionView = UICollectionView(frame: view.bounds, collectionViewLayout: createLayout())
         collectionView.translatesAutoresizingMaskIntoConstraints = false
-        collectionView.register(CatalogueViewCell.self, forCellWithReuseIdentifier: CatalogueViewCell.reuseIdentifier)
+        collectionView.register(CommonViewCell.self, forCellWithReuseIdentifier: CommonViewCell.reuseIdentifier)
         collectionView.translatesAutoresizingMaskIntoConstraints = false
         collectionView.dataSource = self
         collectionView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
@@ -97,7 +97,7 @@ extension GenresView: UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CatalogueViewCell.reuseIdentifier, for: indexPath) as? CatalogueViewCell else { return CatalogueViewCell() }
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CommonViewCell.reuseIdentifier, for: indexPath) as? CommonViewCell else { return CommonViewCell() }
         return cell
     }
 }

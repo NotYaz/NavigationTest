@@ -19,4 +19,11 @@ final class CatalogueCoordinator: CoordinatorProtocol {
         nodes = [CatalogueNode(coordinator: self)]
         set(nodes: nodes)
     }
+    
+    func showProfile() {
+        let profileNode = ProfileNode(coordinator: ProfileCoordinator())
+        nodes += [profileNode]
+        show(node: profileNode)
+    }
+    
 }

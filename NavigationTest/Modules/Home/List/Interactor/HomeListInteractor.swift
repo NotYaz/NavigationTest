@@ -25,4 +25,8 @@ final class HomeListInteractor: InteractorProtocol {
         }
     }
     
+    func didSelectedProfile() {
+        coordinator?.showProfile()
+    }
+    
 }

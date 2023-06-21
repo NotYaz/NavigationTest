@@ -16,7 +16,7 @@ final class ProfileNode: NodeProtocol {
     weak var coordinator: ProfileCoordinator?
     
     var showStyle: ShowStyle {
-        .root
+        .modal
     }
     
     init(coordinator: ProfileCoordinator) {
